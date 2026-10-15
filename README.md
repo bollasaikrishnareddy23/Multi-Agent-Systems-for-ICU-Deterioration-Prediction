@@ -81,31 +81,38 @@ Evaluated on 4,000 patient records from the **PhysioNet 2012 Challenge Dataset**
 ├── PROJECT_STEPS.md                      # Detailed step-by-step project guide
 ├── requirements.txt                      # Environment dependencies
 └── README.md
+```
 
-🚀Quickstart
-1. Clone & Set Up Environment
+---
+
+## 🚀 Quickstart
+
+### 1. Clone & Set Up Environment
+```bash
 git clone [https://github.com/bollasaikrishnareddy23/Multi-Agent-Systems-for-ICU-Deterioration-Prediction.git](https://github.com/bollasaikrishnareddy23/Multi-Agent-Systems-for-ICU-Deterioration-Prediction.git)
 cd Multi-Agent-Systems-for-ICU-Deterioration-Prediction
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
+```
 
-2. Generate Sample Data & Run Agents
-# Generate synthetic test data
+### 2. Run Pipeline
+```bash
+# Generate sample test data
 python src/create_sample_data.py
 
-# Run rule-based multi-agent explanation pipeline
+# Run rule-based multi-agent pipeline
 python src/run_rule_based_agents.py
 
-# Train baseline model and multi-agent stacking models
+# Train baseline and multi-agent stacking models
 python src/train_ml_baseline.py
 python src/train_3_ml_agents.py
+```
 
-🛠️ Tech Stack
-Language: Python 3.10+
+---
 
-Data Engineering: Pandas, NumPy, Google Cloud BigQuery
-
-Machine Learning: Scikit-Learn, XGBoost
-
-Evaluation: AUROC, AUPRC, Stratified K-Fold cross-validation
+## 🛠️ Tech Stack
+- **Language**: Python 3.10+
+- **Data Engineering**: Pandas, NumPy, Google Cloud BigQuery
+- **Machine Learning**: Scikit-Learn, XGBoost
+- **Evaluation**: AUROC, AUPRC, Stratified K-Fold cross-validation
